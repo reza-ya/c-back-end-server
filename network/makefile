@@ -1,10 +1,10 @@
 CC = gcc
 
 
-default: win_list.exe
+default: server.exe
 
-win_list.exe: 
-	$(CC) ./win_list.c -o ./win_list.exe -liphlpapi -lws2_32
+server.exe: 
+	$(CC) ./server/server.c -o ./bin/server.exe -liphlpapi -lws2_32
 
-run:
-	./win_list.exe
+run-server:
+	./bin/server.exe

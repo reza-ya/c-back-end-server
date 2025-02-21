@@ -4,7 +4,7 @@ CC = gcc
 default: lab.exe
 
 lab.exe: 
-	$(CC) ./lab.c -o ./bin/lab.exe -liphlpapi -lws2_32
+	$(CC) ./lab.c -o ./bin/lab.exe
 
 run:
 	./bin/lab.exe
